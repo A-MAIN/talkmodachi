@@ -2,7 +2,7 @@
 #define undefined char
 typedef unsigned char    byte;
 
-#define PADDING(start,end) char padding_##start[(end+0x1)-(start)]
+#define PADDING(start,end) char padding_##start[(end)-(start)]
 
 typedef struct {
     PADDING(0x0,0x3217);
@@ -36,9 +36,9 @@ typedef struct {
 } ttsGlobal; // ingame size: 0x14
 #else
 typedef struct {
-    PADDING(0x0,0x95);
+    PADDING(0x0,0x96);
     bool isBusy;
-    PADDING(0x97,0x9f);
+    PADDING(0x97,0xA0);
     int unknown;
     uint16_t converted_text;
 } ttsData; // ingame size: 0xbc
