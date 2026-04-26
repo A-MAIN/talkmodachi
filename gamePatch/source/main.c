@@ -68,8 +68,6 @@ int getSysRegion(){
 	return 0x1;
 	#elif REGION_EU
 	return 0x2;
-	#elif REGION_KR
-	return 0x3;
 	#else
 	return 0x1;
 	#endif
@@ -81,9 +79,9 @@ int getSysLang(){
 	// 3 = German
 	// 4 = Italian
 	// 5 = Spanish
-	// 6 = Dutch
-	if (audioJob->language < 1 || audioJob->language > 6)
-		while (audioJob->language < 1 || audioJob->language > 6)
+	// 8 = Dutch
+	if (audioJob->language < 1 || audioJob->language > 8)
+		while (audioJob->language < 1 || audioJob->language > 8)
 		{
 			// wait for a valid language to be set. this is a lazy fix since currently languages cannot be switched in runtime
 		}

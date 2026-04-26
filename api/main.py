@@ -27,7 +27,7 @@ def langToId(lang):
     elif lang == 'it':
         return 4
     elif lang == 'nl':
-        return 6
+        return 8
     else:
         return 1
 
@@ -52,8 +52,8 @@ def sing():
             match lang:
                 case 'useng':
                     romName = 'US'
-                case 'jp':
-                    romName = "JP"
+                #case 'jp':
+                #   romName = "JP"
                 case 'kr':
                     romName = "KR"
                 case _:

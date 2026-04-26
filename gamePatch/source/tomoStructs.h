@@ -36,12 +36,12 @@ typedef struct {
 } ttsGlobal; // ingame size: 0x14
 #else
 typedef struct {
-    PADDING(0x0,0x97);
+    PADDING(0x0,0x96);
     bool isBusy;
-    PADDING(0x98,0xA2);
+    PADDING(0x97,0xA0);
     int unknown;
     uint16_t converted_text;
-} ttsData; // ingame size: 0xbc - incase if the game has five roms (or nl still exists in the eu rom) i expanded the bool up a bit
+} ttsData; // ingame size: 0xbc
 
 typedef struct {
     void* vtable;
