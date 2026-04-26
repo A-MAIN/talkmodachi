@@ -43,8 +43,6 @@
 #elif REGION_KR
 #define ADDR_unknown_ptr 0x00aef67c
 #define ADDR_ttsGlobal 0x00aef624
-//#define ADDR_newTtsGlobal 0x0
-//#define ADDR_setupTtsGlobal 0x0
 #define ADDR_setupFunc 0x003915e0
 #define ADDR_doTTS 0x00191f2c
 #define ADDR_msbtToText 0x003d3a08
@@ -63,8 +61,6 @@
 #elif REGION_JP
 #define ADDR_unknown_ptr 0x0
 #define ADDR_ttsGlobal 0x008f7c64
-//#define ADDR_newTtsGlobal 0x0
-//#define ADDR_setupTtsGlobal 0x0
 #define ADDR_setupFunc 0x0021c730
 #define ADDR_set_tts_text 0x0021c7f4 // this is not exclusive to the JP rom, but it's the easiest place i found to inject custom text
 #define ADDR_doTTS 0x0021c6cc

@@ -26,6 +26,8 @@ def langToId(lang):
         return 2
     elif lang == 'it':
         return 4
+    elif lang == 'nl':
+        return 6
     else:
         return 1
 
@@ -51,8 +53,8 @@ def sing():
             match data['lang']:
                 case 'useng':
                     romName = 'US'
-                #case 'jp':
-                #    romName = "JP"
+                case 'jp':
+                    romName = "JP"
                 case 'kr':
                     romName = "KR"
                 case _:
@@ -128,7 +130,7 @@ def text_to_speech():
         return jsonify({'error': 'Invalid parameter values'}), 400
     intonation = intonation - 1 # convert to 0-based index
 
-    if data['lang'] not in ['useng', 'eueng', 'es', 'de', 'fr', 'it', 'jp', 'kr']:
+    if data['lang'] not in ['useng', 'eueng', 'es', 'de', 'fr', 'it', 'nl', 'jp', 'kr']:
         return jsonify({'error': 'Invalid language specified'}), 400
 
     formatted_text = text
