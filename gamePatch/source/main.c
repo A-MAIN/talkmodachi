@@ -79,12 +79,13 @@ int getSysLang(){
 	// 3 = German
 	// 4 = Italian
 	// 5 = Spanish
-	if (audioJob->language < 1 || audioJob->language > 5)
-		while (audioJob->language < 1 || audioJob->language > 5)
+	// 8 = Dutch
+	if (audioJob->language < 1 || audioJob->language > 8)
+		while (audioJob->language < 1 || audioJob->language > 8)
 		{
 			// wait for a valid language to be set. this is a lazy fix since currently languages cannot be switched in runtime
 		}
-	//if (audioJob->language < 1 || audioJob->language > 5)
+	//if (audioJob->language < 1 || audioJob->language > 8)
 		//return 1;
 	return audioJob->language;
 }
